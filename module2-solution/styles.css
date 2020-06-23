@@ -34,7 +34,7 @@ background-color: #FF69B4;
 .paragraph2 {
 	font-size: .70em;
 	float: left;
-  position: relative;
+  position: static;
 	width: 30%;
 	height: 120px;
 	padding-left: 5px;
@@ -193,7 +193,7 @@ right: 9px;
 .paragraph2{
   float: right;
   right: 20px;
-  margin-right: 260px;
+  margin-right: 280px;
   margin-top: 9px;
 }
 
