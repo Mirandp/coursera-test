@@ -1,6 +1,4 @@
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
 
 body {
   font-size: 16px;
@@ -51,6 +49,7 @@ body {
 }
 #nav-list a:hover {
   background: #E7E7E7;
+  column-width: 10px;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -119,6 +118,19 @@ h2{
   margin-left: -15px;
   vertical-align: middle;
 }
+
+.navbar-toggle{
+  visibility: hidden;
+}
+
+.navbar-header{
+  float: left;
+} 
+
+#collapsable-nav{
+  visibility: hidden;
+}
+
 }
 
 
@@ -127,9 +139,19 @@ h2{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
- .navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
+
+.button{
+  width: 100%;
+  float: right;
 }
+#collapsable-nav{
+  visibility: hidden;
+}
+button.navbar-toggle{
+  pointer-events: none;
+  cursor: default;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
@@ -145,16 +167,23 @@ h2{
 
 /* Extra Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
+
+.button{
+  width: 100%;
+}
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
   float: right;
   margin-top: 0px;
 }
+
 }
 
