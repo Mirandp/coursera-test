@@ -160,6 +160,13 @@ button.navbar-toggle{
   float: right;
   margin-top: 0px;
 }
+
+.navbar-toggle{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
 }
 
 
@@ -168,8 +175,10 @@ button.navbar-toggle{
 /* Extra Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
 
-.button{
-  width: 100%;
+.navbar-toggle{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
