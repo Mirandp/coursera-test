@@ -166,6 +166,17 @@ button.navbar-toggle{
   height: 40px;
   padding: 10px;
 }
+.navbar-toggle{
+  visibility: hidden;
+}
+
+.navbar-header{
+  float: left;
+} 
+
+#collapsable-nav{
+  visibility: hidden;
+}
 
 }
 
